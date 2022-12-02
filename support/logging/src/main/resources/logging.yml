@@ -1,0 +1,5 @@
+spring:
+  sleuth:
+    trace-id128: true
+
+logging.config: classpath:logback/logback-${spring.profiles.active}.xml

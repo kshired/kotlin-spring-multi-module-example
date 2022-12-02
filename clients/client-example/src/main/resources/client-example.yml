@@ -1,0 +1,33 @@
+feign:
+  client:
+    config:
+      example:
+        connectTimeout: 2000
+        readTimeout: 5000
+        loggerLevel: full
+  compression:
+    response:
+      enabled: false
+      useGzipDecoder: false
+  httpclient:
+    maxConnections: 2000
+    maxConnectionsPerRoute: 2000
+
+---
+spring.config.activate.on-profile: local
+
+
+---
+spring.config.activate.on-profile: local-dev
+
+
+---
+spring.config.activate.on-profile: dev
+
+
+---
+spring.config.activate.on-profile: staging
+
+
+---
+spring.config.activate.on-profile: live
