@@ -1,4 +1,4 @@
-package com.kshired.common.util.response
+package com.kshired.boilerplate.common.util.response
 
 data class ApiResponse<T> private constructor(
     val data: T?,

@@ -13,6 +13,6 @@ dependencies {
     implementation(project(":common:error"))
     implementation(project(":domain"))
     implementation(project(":support:logging"))
-    runtimeOnly(project(":storage:rdb"))
+    implementation(project(":storage:rdb"))
     implementation("org.springframework.boot:spring-boot-starter-web")
 }

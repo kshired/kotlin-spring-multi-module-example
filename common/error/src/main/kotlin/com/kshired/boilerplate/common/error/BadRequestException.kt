@@ -1,4 +1,4 @@
-package com.kshired.common.error
+package com.kshired.boilerplate.common.error
 
 data class BadRequestException(
     override val message: String

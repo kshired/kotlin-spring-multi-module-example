@@ -3,7 +3,7 @@ package com.kshired.boilerplate.apiserver.controller.user
 import com.kshired.boilerplate.apiserver.controller.user.request.UserCreateRequest
 import com.kshired.boilerplate.apiserver.controller.user.response.UserResponse
 import com.kshired.boilerplate.domain.user.UserService
-import com.kshired.common.util.response.ApiResponse
+import com.kshired.boilerplate.common.util.response.ApiResponse
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping

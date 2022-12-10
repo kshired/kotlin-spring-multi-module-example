@@ -1,4 +1,4 @@
-rootProject.name = "kotlin-spring-boilerplate"
+rootProject.name = "example-project"
 
 include(
     "api-server",

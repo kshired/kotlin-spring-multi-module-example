@@ -1,8 +1,8 @@
 package com.kshired.boilerplate.apiserver.support.error
 
-import com.kshired.common.error.BadRequestException
-import com.kshired.common.error.InternalServerException
-import com.kshired.common.util.response.ApiResponse
+import com.kshired.boilerplate.common.error.BadRequestException
+import com.kshired.boilerplate.common.error.InternalServerException
+import com.kshired.boilerplate.common.util.response.ApiResponse
 import org.slf4j.LoggerFactory
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.RestControllerAdvice

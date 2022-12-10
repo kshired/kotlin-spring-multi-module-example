@@ -1,4 +1,4 @@
-package com.kshired.common.error
+package com.kshired.boilerplate.common.error
 
 class InternalServerException(
     override val message: String

@@ -1,6 +1,6 @@
 package com.kshired.boilerplate.domain.user
 
-import com.kshired.common.error.BadRequestException
+import com.kshired.boilerplate.common.error.BadRequestException
 import org.springframework.stereotype.Service
 
 @Service
