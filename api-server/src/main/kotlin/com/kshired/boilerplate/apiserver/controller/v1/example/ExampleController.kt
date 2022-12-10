@@ -1,6 +1,6 @@
-package com.kshired.boilerplate.apiserver.controller.example
+package com.kshired.boilerplate.apiserver.controller.v1.example
 
-import com.kshired.boilerplate.apiserver.controller.example.response.CatFactResponse
+import com.kshired.boilerplate.apiserver.controller.v1.example.response.CatFactResponse
 import com.kshired.boilerplate.clients.client.example.ExampleClient
 import com.kshired.boilerplate.common.util.response.ApiResponse
 import org.springframework.web.bind.annotation.GetMapping

@@ -1,4 +1,4 @@
-package com.kshired.boilerplate.apiserver.controller.user.request
+package com.kshired.boilerplate.apiserver.controller.v1.user.request
 
 import com.kshired.boilerplate.domain.user.User
 

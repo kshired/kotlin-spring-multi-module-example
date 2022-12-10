@@ -1,7 +1,7 @@
-package com.kshired.boilerplate.apiserver.controller.user
+package com.kshired.boilerplate.apiserver.controller.v1.user
 
-import com.kshired.boilerplate.apiserver.controller.user.request.UserCreateRequest
-import com.kshired.boilerplate.apiserver.controller.user.response.UserResponse
+import com.kshired.boilerplate.apiserver.controller.v1.user.request.UserCreateRequest
+import com.kshired.boilerplate.apiserver.controller.v1.user.response.UserResponse
 import com.kshired.boilerplate.domain.user.UserService
 import com.kshired.boilerplate.common.util.response.ApiResponse
 import org.springframework.web.bind.annotation.GetMapping
