@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 internal class MainDataSourceConfig {
     @Bean
-    @ConfigurationProperties(prefix = "kshired.datasource.main")
+    @ConfigurationProperties(prefix = "rdb.datasource.main")
     fun mainHikariConfig(): HikariConfig {
         return HikariConfig()
     }

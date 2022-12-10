@@ -22,7 +22,7 @@ spring:
     console:
       enabled: true
 
-kshired:
+rdb:
   datasource:
     main:
       driver-class-name: org.h2.Driver
