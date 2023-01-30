@@ -7,6 +7,7 @@ plugins {
     kotlin("plugin.jpa") apply false
     id("org.springframework.boot") apply false
     id("io.spring.dependency-management")
+    id("org.jlleitschuh.gradle.ktlint") version "11.0.0"
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_17
