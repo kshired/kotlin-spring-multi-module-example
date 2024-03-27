@@ -4,9 +4,9 @@
 - init.sh 을 실행하여, group, project 이름을 입력한다.
 
 ## 환경
-- Spring Boot 3.0
-- Kotlin 1.7.20
-- JVM 17
+- Spring Boot 3.2.2
+- Kotlin 1.9.22
+- JVM 21
 
 ### Reference
 - https://github.com/team-dodn/live-code-show

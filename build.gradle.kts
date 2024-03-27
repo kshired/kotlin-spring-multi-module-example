@@ -1,19 +1,19 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.6.10"
-    kotlin("kapt") version "1.7.20"
+    kotlin("jvm")
+    kotlin("kapt")
     kotlin("plugin.spring") apply false
     kotlin("plugin.jpa") apply false
     id("org.springframework.boot") apply false
     id("io.spring.dependency-management")
-    id("org.jlleitschuh.gradle.ktlint") version "11.0.0"
+    id("org.jlleitschuh.gradle.ktlint")
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_17
-
+val javaVersion: String by project
 val projectGroup: String by project
 val applicationVersion: String by project
+java.sourceCompatibility = JavaVersion.valueOf("VERSION_$javaVersion")
 
 allprojects {
     group = projectGroup
@@ -37,7 +37,7 @@ subprojects {
     dependencyManagement {
         val springCloudDependenciesVersion: String by project
         imports {
-            mavenBom("org.springframework.cloud:spring-cloud-dependencies:${springCloudDependenciesVersion}")
+            mavenBom("org.springframework.cloud:spring-cloud-dependencies:$springCloudDependenciesVersion")
         }
     }
 
@@ -64,7 +64,7 @@ subprojects {
     tasks.withType<KotlinCompile> {
         kotlinOptions {
             freeCompilerArgs = listOf("-Xjsr305=strict")
-            jvmTarget = "17"
+            jvmTarget = javaVersion
         }
     }
 
